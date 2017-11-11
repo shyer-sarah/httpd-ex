@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteCond %{HTTP_HOST} ^www.sarahwong.net$ [NC]
+   RewriteRule ^(.*)$ http://114.215.114.28:8088/$1 [L,R=301]
+</IfModule>
